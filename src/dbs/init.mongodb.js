@@ -1,7 +1,8 @@
 'use strict'
 
 const mongoose = require('mongoose')
-const connectString = `mongodb://localhost:27017/shopDev`
+const {db: {host, name, port}} = requrie('../configs/config.mongodb.js')
+const connectString = `mongodb://${host}:${port}/${name}`
 
 //dev
 class Database{

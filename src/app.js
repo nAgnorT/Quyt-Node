@@ -1,3 +1,4 @@
+require('dotenv').connect
 const compression = require('compression')
 const express = require('express')
 const { default: helmet } = require('helmet')
